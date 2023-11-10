@@ -24,8 +24,6 @@ const app = require('./app');
 //   .then(() => console.log('DB connection successful!'));
 
 
-// mongoose
-//   .connect('mongodb+srv://philipelias16:Kewoyoung1620@cluster0.bejvujp.mongodb.net/TourNow?retryWrites=true&w=majority');
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
