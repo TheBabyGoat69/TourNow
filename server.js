@@ -23,14 +23,6 @@ const app = require('./app');
 //   })
 //   .then(() => console.log('DB connection successful!'));
 
-mongoose
-  .connect('mongodb+srv://philipelias16:Kewoyoung1620@cluster0.bejvujp.mongodb.net/?retryWrites=true&w=majority',{
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
-  })
-  .then(() => console.log('DB connection successful!'));
 
 // mongoose
 //   .connect('mongodb+srv://philipelias16:Kewoyoung1620@cluster0.bejvujp.mongodb.net/TourNow?retryWrites=true&w=majority');
