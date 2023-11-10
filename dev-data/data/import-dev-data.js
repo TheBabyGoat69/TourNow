@@ -7,26 +7,7 @@ const Review = require('./../../models/reviewModel');
 
 dotenv.config({ path: './config.env' });
 
-// const DB = process.env.DATABASE.replace(
-//   '<PASSWORD>',
-//   process.env.DATABASE_PASSWORD
-// );
 
-// mongoose
-//   .connect(DB, {
-//     useNewUrlParser: true,
-//     useCreateIndex: true,
-//     useFindAndModify: false
-//   })
-//   .then(() => console.log('DB connection successful!'));
-mongoose
-  .connect('mongodb+srv://philipelias16:Kewoyoung1620@cluster0.bejvujp.mongodb.net/?retryWrites=true&w=majority',{
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
-  })
-  .then(() => console.log('DB connection successful!'));
 
 // READ JSON FILE
 const tours = JSON.parse(fs.readFileSync(`${__dirname}/tours.json`, 'utf-8'));
